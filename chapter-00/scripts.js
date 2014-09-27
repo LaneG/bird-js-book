@@ -4,5 +4,6 @@
     count += 1;
   }
 
-  document.write(total);
+document.write(total);
+
 
