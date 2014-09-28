@@ -13,6 +13,8 @@
 
 //////////////////////////////
 
+// figure out how many numbers in the range.
+
 function range(x,y) {
   var startNumber = x;
   var endNumber = y;
@@ -21,19 +23,29 @@ function range(x,y) {
       startNumber = startNumber + 1;
       numberRange = numberRange + 1;
     };
-  console.log(numberRange);
   return(numberRange);
   };
 
+// add the numbers in that range together.
+
 function sum(numberRange) {
-  var counter = 0;
-  var total = 0;
-  while (counter <= range) {
-    console.log(count);
-    range = range + 1;
+  var maxRange = numberRange;
+  var firstNumber = 0;
+  var total = firstNumber;
+  while (firstNumber <= maxRange) {
+    total = total + firstNumber;
+    firstNumber = firstNumber + 1;
     };
-  console.log(total);
+  return(total)
   };
 
-document.write(sum(range(1,4)));
+// call the two functions and put the result on the screen.
+
+document.write(sum(range(1,10)));
+
+///////////////////////////////
+
+// OK that works...now what happens if the range starts at 0?
+
+//////////////////////////////
 
